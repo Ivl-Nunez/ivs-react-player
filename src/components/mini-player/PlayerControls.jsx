@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { CONTROLS } from './config';
-import { AspectRatio, Close, VolumeOff, VolumeUp } from '../../assets/icons';
 
 const PlayerControls = (props) => {
   const { controls, muted, onClose, onMute, onResize } = props;
