@@ -1,13 +1,15 @@
 import React from 'react';
 
 import MiniPlayer from './components/mini-player';
+import Broadcast from './components/Broadcast';
 
 const STREAM_PLAYBACK_URL =
-  'https://3d26876b73d7.us-west-2.playback.live-video.net/api/video/v1/us-west-2.913157848533.channel.xJ2tVekwmMGd.m3u8';
+  'https://d3608ec8df2e.us-east-1.playback.live-video.net/api/video/v1/us-east-1.284665384246.channel.eHnBE0OzCydy.m3u8';
 
 const App = () => {
   return (
     <div className="App">
+      <Broadcast />
       <MiniPlayer
         streamUrl={STREAM_PLAYBACK_URL}
       />
